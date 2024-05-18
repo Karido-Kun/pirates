@@ -87,3 +87,39 @@ class Drowned(Monster):
         attacks["punch 2"] = ["punches",random.randrange(35,51), (1,10)]
         #7 to 19 hp, bite attack, 65 to 85 speed (100 is "normal")
         super().__init__(name, random.randrange(7,20), attacks, 75 + random.randrange(-10,11))
+        
+class BaroqueWorksAgent(Monster):
+    def __init__ (self, name):
+        attacks = {}
+        attacks["kick"] = ["kick",random.randrange(35,51), (5,15)]
+        attacks["punch 1"] = ["punches",random.randrange(35,51), (1,10)]
+        attacks["punch 2"] = ["punches",random.randrange(35,51), (1,10)]
+        #7 to 19 hp, bite attack, 65 to 85 speed (100 is "normal")
+        super().__init__(name, random.randrange(7,20), attacks, 75 + random.randrange(-10,11))
+
+class Crocodile(Monster):
+    def __init__(self, name):
+        attacks = {}
+        attacks["Desert Spada"] = ["Desert Spada", random.randrange(35, 51), (5, 15)]
+        attacks["Sables"] = ["Sables", random.randrange(35, 51), (1, 10)]
+        attacks["Barján"] = ["Barján", random.randrange(35, 51), (1, 10)]
+        # 7 to 19 hp, bite attack, 65 to 85 speed (100 is "normal")
+        super().__init__(name, random.randrange(7, 20), attacks, 75 + random.randrange(-10, 11))
+
+class Kaido(Monster):
+    def __init__(self, name):
+        attacks = {}
+        attacks["Bolo Breath "] = ["burns", random.randrange(50, 70), (10, 20)]
+        attacks["Thunder Bagua"] = ["Thunder Bagua", random.randrange(50, 70), (10, 20)]
+        attacks["Kaifu"] = ["Kaifu", random.randrange(50,70), (10,20)]
+        # 7 to 19 hp, bite attack, 160 to 200 speed (100 is "normal")
+        super().__init__(name, random.randrange(50, 90), attacks, 50 + random.randrange(-20, 21))
+
+class Donflamingo(Monster):
+    def __init__(self, name):
+        attacks = {}
+        attacks["Parasite"] = ["Parasites", random.randrange(60, 90), (10, 14)]
+        attacks["God Thread"] = ["God Thread", random.randrange(60,80), (10,16)]
+        attacks["Torikago"] = ["Torikago", random.randrange(60,80), (10,16)]
+        # 7 to 19 hp, bite attack, 160 to 200 speed (100 is "normal")
+        super().__init__(name, random.randrange(100, 150), attacks, 180 + random.randrange(-20, 21))

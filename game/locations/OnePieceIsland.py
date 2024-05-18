@@ -229,14 +229,7 @@ class Kaido(event.Event, Monster):
 
 
 
-class Gumo_Gumo_no(Item):
-    def __init__(self):
-        super().__init__("Gumo-Gumo-no", 1)
-        self.damage = (40,400)
-        self.charges = 2
-        self.skill = "brawling"
-        self.verb = "Kick"
-        self.verb2 = "Kicks"
+
 
 class Enma(Item):
     def __init__(self):

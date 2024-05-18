@@ -35,7 +35,6 @@ class Beach_with_ship (location.SubLocation):
         self.verbs['west'] = self
         self.event_chance = 50
         self.events.append (seagull.Seagull())
-        self.events.append (storm.Storm())
         self.events.append(drowned_pirates.DrownedPirates())
 
     def enter (self):
