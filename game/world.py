@@ -34,8 +34,7 @@ class World (context.Context):
         self.locs[self.homex][self.homey] = homeport.HomePort (self.homex, self.homey, self)
 
         #Add new islands to this list:
-        #island_list = [island.Island, OnePieceIsland.OnePieceIsland,OnePieceWorld.OnePieceWorld]
-        island_list = [OnePieceWorld.OnePieceWorld]
+        island_list = [island.Island,OnePieceWorld.OnePieceWorld]
         for cur_island in island_list:
             placed = False
             while placed == False:
@@ -51,8 +50,7 @@ class World (context.Context):
         self.locs[self.startx+1][self.starty] = whirl
 
         #Test island: always start off next to a test island. Swap in your island to test yours.
-        #testland = island.Island (self.startx, self.starty+1, self)
-        #testland = OnePieceIsland.OnePieceIsland (self.startx, self.starty+1, self)
+        testland = island.Island (self.startx, self.starty+1, self)
         testland = OnePieceWorld.OnePieceWorld (self.startx, self.starty+1, self)
         self.locs[self.startx][self.starty+1] = testland
 
